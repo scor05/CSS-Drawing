@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background: #d47400;
+    background: radial-gradient(circle, rgba(212, 116, 0, 1) 0%, rgba(247, 229, 27, 1) 0%, rgba(212, 116, 0, 1) 100%);
+    width: 600px;
+    height: 600px;
+}
