@@ -2,6 +2,18 @@ body {
     margin: 0px;
 }
 
+@font-face {
+    font-family: "customcsfont";
+    src: url("offensive-regular-all-caps.otf.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --GOfont : "customcsfont";
+}
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -11,8 +23,34 @@ body {
 }
 
 .background {
+    display: flex;
     background: #d47400;
     background: radial-gradient(circle, rgba(212, 116, 0, 1) 0%, rgba(247, 229, 27, 1) 0%, rgba(212, 116, 0, 1) 100%);
     width: 600px;
     height: 600px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.model {
+    display: flex;
+    background: red;
+    width: 200px;
+    height: 400px;
+}
+
+.gotext {
+    display: flex;
+    background: lightblue;
+    width: 350px;
+    height: 200px;
+    align-items: center;
+    
+    p {
+        padding-top: 40px;
+        font-size: 100px;
+        margin-left: 20px;
+        font-family: var(--GOfont);
+    }
 }
