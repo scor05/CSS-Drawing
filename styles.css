@@ -2,6 +2,10 @@ body {
     margin: 0px;
 }
 
+p {
+    margin: 0px;
+}
+
 @font-face {
     font-family: "customcsfont";
     src: url("offensive-regular-all-caps.otf.woff2") format("woff2");
@@ -28,29 +32,71 @@ body {
     background: radial-gradient(circle, rgba(212, 116, 0, 1) 0%, rgba(247, 229, 27, 1) 0%, rgba(212, 116, 0, 1) 100%);
     width: 600px;
     height: 600px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
 
-.model {
-    display: flex;
-    background: red;
-    width: 200px;
-    height: 400px;
+
+/* TEXTO DEL GO */
+.background > div:nth-child(2){
+    margin-top: 100px;
 }
 
 .gotext {
     display: flex;
-    background: lightblue;
-    width: 350px;
+    width: 320px;
     height: 200px;
+    flex-direction: row;
     align-items: center;
-    
+    justify-content: center;
+
     p {
-        padding-top: 40px;
-        font-size: 100px;
         margin-left: 20px;
+        margin-top: 30px;
+        letter-spacing: 15px;
+        font-size: 110px;
         font-family: var(--GOfont);
     }
 }
+
+/* --------------- MODELO DEL CT -------------------*/
+.model {
+    display: flex;
+    background-color: red;
+    width: 200px;
+    height: 400px;
+    flex-direction: column;
+
+    .head {
+        width: 100%;
+        padding-left: 240px;
+        margin-top: -65px;
+
+        li::marker{
+            font-size: 200px;
+        }
+    }
+
+    .torso {
+        width: 100px;
+        height: 80px;
+        background: black;
+        border-radius: 27% 73% 14% 10% / 40% 59% 42% 34%;
+        margin-left: 40px;
+        margin-top: -105px;
+    }
+
+    .belt {
+        margin-top: -30px;
+        margin-left: -5px;
+        height: 75px;
+        width: 160px;
+        background: black;
+        clip-path: polygon(82.16% 94.43%, 86.1% 100%, 89.04% 100%, 93.16% 94.43%, 96.82% 64.22%, 94.96% 32.51%, 90.91% 25.82%, 70.42% 17.41%, 33.36% 2.19%, 17.41% 2.19%, 17.92% 10.07%, 18.18% 19.78%, 18.43% 29.49%, 16.99% 40.9%, 15% 51.52%, 16.79% 57.14%);
+    }
+}
+
+
+
+
