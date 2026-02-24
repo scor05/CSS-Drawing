@@ -75,6 +75,7 @@ h2 {
 .model {
     display: flex;
     padding: 0px;
+    background-color: red;
     width: 200px;
     height: 450px;
     flex-direction: column;
@@ -107,6 +108,7 @@ h2 {
     .torso {
         width: 100px;
         height: 100px;
+        background: black;
         border-radius: 27% 73% 14% 10% / 40% 59% 42% 34%;
         margin-left: 60px;
         margin-top: -105px;
@@ -114,23 +116,20 @@ h2 {
 
     .belt {
         margin-top: -40px;
-        margin-left: 20px;
+        margin-left: 17px;
         height: 75px;
         width: 155px;
+        background: black;
         clip-path: polygon(82.16% 94.43%, 88.8% 98%, 89.04% 97%, 93.16% 94.43%, 96.82% 64.22%, 94.96% 32.51%, 90.91% 25.82%, 70.42% 17.41%, 33.36% 2.19%, 18.41% 2.19%, 18.2% 10.07%, 18.4% 19.78%, 18% 29.49%, 17.5% 40.9%, 17.2% 51.52%, 18% 57.14%);
-    }
-
-    .legs>*>* {
-        background-color: black;
     }
 
     .legs {
         display: flex;
         width: 100%;
         height: 200px;
+        background: green;
         flex-direction: column;
-        margin-left: 25px;
-        background-color: transparent;
+        margin-left: 20px;
 
         .top {
             display: flex;
@@ -142,7 +141,8 @@ h2 {
                 height: 120px;
                 margin-left: 15px;
                 margin-top: -35px;
-                clip-path: polygon(14.34% 73.41%, 16.79% 83.21%, 13.36% 100%, 51% 100%, 66.75% 47.54%, 66.75% 6.54%, 61.95% 1.79%, 25.79% 0%, 20.79% 4.54%, 17.39% 12.97%, 16.79% 56.74%, 14.65% 64.94%);
+                background-color: black;
+                clip-path: polygon(14.34% 73.41%, 16.79% 83.21%, 13.36% 100%, 51% 100%, 66.75% 47.54%, 66.75% 6.54%, 61.95% 1.79%, 33.79% 0%, 20.79% 6.54%, 17.39% 12.97%, 16.79% 56.74%, 14.65% 64.94%);
             }
 
             .topright {
@@ -150,7 +150,8 @@ h2 {
                 height: 120px;
                 margin-left: -40px;
                 margin-top: -25px;
-                clip-path: polygon(96.32% 72.44%, 86.04% 49.72%, 62% 26.57%, 60.1% 0%, 0.75% 0%, 2% 30.88%, 3% 55%, 14.96% 60%, 50.71% 93.19%, 60.06% 97.11%, 99.98% 97.11%);
+                background-color: black;
+                clip-path: polygon(96.32% 72.44%, 86.04% 49.72%, 62.96% 26.57%, 54.1% 0%, 0.75% 0%, 3.17% 25.88%, 7.31% 34.85%, 14.96% 39.99%, 42.71% 93.19%, 49.06% 97.11%, 99.98% 97.11%);
             }
         }
 
@@ -164,10 +165,9 @@ h2 {
                 height: 85px;
                 margin-top: -15px;
                 margin-left: 8px;
+                background-color: black;
                 clip-path: polygon(73.25% 34.61%, 78.89% 20.91%, 90% 11.29%, 92% 5%, 89.25% 0%, 36.52% 0%, 23.31% 17.71%, 16.67% 33.73%, 11.91% 46.19%, 11.91% 56.92%, 8.52% 67.31%, 4.69% 77.16%, 3.47% 88.1%, 5.66% 100%, 53.81% 100%, 73.25% 64%, 71.3% 49.3%);
             }
-
-            .botright {}
         }
     }
 }
