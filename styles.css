@@ -35,7 +35,7 @@ h2 {
 .background {
     display: flex;
     background: #d47400;
-    background: radial-gradient(circle, rgba(212, 116, 0, 1) 0%, rgba(247, 229, 27, 1) 0%, rgba(212, 116, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(212, 116, 0, 1) 0%, rgba(247, 229, 27, 1) 0%, rgba(212, 116, 0, 1) 90%);
     width: 600px;
     height: 600px;
     justify-content: space-evenly;
