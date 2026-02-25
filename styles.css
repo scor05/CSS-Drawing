@@ -105,9 +105,9 @@ h2 {
 
     .upperBody {
         display: flex;
+        background-color: transparent;
         width: 320px;
         height: 120px;
-        background-color: yellow;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -123,11 +123,12 @@ h2 {
         }
 
         .weapon {
-            background-color: red;
+            background-color: black;
             width: 160px;
             height: 30px;
-            margin-left: 140px;
-            margin-top: -215px;
+            margin-left: 155px;
+            margin-top: -214px;
+            clip-path: polygon(75.7% 87.64%, 76.5% 80.33%, 94.51% 80.33%, 95.37% 81.69%, 100% 81.21%, 100% 66.04%, 95.25% 66.04%, 94.39% 67.34%, 79.78% 67.01%, 77.66% 64.88%, 76.5% 56.9%, 76.5% 46.82%, 72.77% 46.82%, 72.77% 8.67%, 71.48% 8.67%, 71.22% 39.37%, 70.24% 43.68%, 68.29% 43.68%, 66.53% 32.52%, 22.42% 32.52%, 18.31% 21.15%, 18.31% 9.47%, 19.62% 6.8%, 19.43% 4.99%, 16.39% 9.68%, 16.39% 32.73%, 10.36% 32.95%, 0% 43.29%, 0% 84.04%, 5.29% 100%, 67.5% 100%, 68.5% 95.87%, 68.87% 87.73%, 69% 84%, 70.13% 84%, 70.37% 87.49%, 73.51% 87.64%);
         }
 
         .arms {
@@ -161,10 +162,10 @@ h2 {
 
     .belt {
         margin-top: -60px;
-        margin-left: 20px;
+        margin-left: 15px;
         height: 75px;
-        width: 155px;
-        clip-path: polygon(82.16% 94.43%, 88.8% 98%, 89.04% 97%, 93.16% 94.43%, 96.82% 64.22%, 94.96% 32.51%, 90.91% 25.82%, 70.42% 17.41%, 33.36% 2.19%, 18.41% 2.19%, 18.2% 10.07%, 18.4% 19.78%, 18% 29.49%, 17.5% 40.9%, 17.2% 51.52%, 18% 57.14%);
+        width: 160px;
+        clip-path: polygon(82.16% 94.43%, 91.04% 97%, 93.16% 90.43%, 94.82% 64.22%, 94.82% 39.04%, 94.3% 35.04%, 92.75% 30.2%, 90.91% 29.49%, 70.42% 17.41%, 33.36% 2.19%, 18.41% 6.19%, 18.2% 10.07%, 18.4% 19.78%, 18% 29.49%, 17.5% 40.9%, 17.2% 51.52%, 18% 57.14%, 19.26% 61.4%);
     }
 
     .legs>*>* {
@@ -183,44 +184,53 @@ h2 {
             display: flex;
             flex-direction: row;
             align-items: center;
+        }
 
-            .topleft {
-                width: 100px;
-                height: 120px;
-                margin-left: 15px;
-                margin-top: -35px;
-                clip-path: polygon(14.34% 73.41%, 16.79% 83.21%, 13.36% 100%, 51% 100%, 66.75% 47.54%, 66.75% 6.54%, 61.95% 1.79%, 25.79% 0%, 20.79% 4.54%, 17.39% 12.97%, 16.79% 56.74%, 14.65% 64.94%);
-            }
+        /* Muslo izquierdo */
+        .top>div:nth-child(1) {
+            width: 100px;
+            height: 120px;
+            margin-left: 15px;
+            margin-top: -35px;
+            clip-path: polygon(14.34% 73.41%, 16.79% 83.21%, 13.36% 100%, 51% 100%, 66.75% 47.54%, 66.75% 6.54%, 61.95% 1.79%, 25.79% 0%, 20.79% 4.54%, 17.39% 12.97%, 16.79% 56.74%, 14.65% 64.94%);
+        }
 
-            .topright {
-                width: 80px;
-                height: 120px;
-                margin-left: -40px;
-                margin-top: -25px;
-                clip-path: polygon(96.32% 72.44%, 86.04% 49.72%, 62% 26.57%, 60.1% 0%, 0.75% 0%, 2% 30.88%, 3% 55%, 14.96% 60%, 50.71% 93.19%, 60.06% 97.11%, 99.98% 97.11%);
-            }
+        /* Muslo derecho */
+        .top>div:nth-child(2) {
+            width: 80px;
+            height: 120px;
+            margin-left: -40px;
+            margin-top: -25px;
+            clip-path: polygon(96.32% 72.44%, 86.04% 49.72%, 62% 26.57%, 60.1% 0%, 0.75% 0%, 2% 30.88%, 3% 55%, 14.96% 60%, 50.71% 93.19%, 60.06% 97.11%, 99.98% 97.11%);
         }
 
         .bottom {
             display: flex;
             flex-direction: row;
             align-items: center;
+        }
 
-            .botleft {
-                width: 65px;
-                height: 85px;
-                margin-top: -12px;
-                margin-left: 6px;
-                clip-path: polygon(73.25% 34.61%, 78.89% 20.91%, 90% 11.29%, 92% 5%, 89.25% 0%, 36.52% 0%, 23.31% 17.71%, 16.67% 33.73%, 11.91% 46.19%, 11.91% 56.92%, 8.52% 67.31%, 4.69% 77.16%, 3.47% 88.1%, 10% 100%, 50.81% 100%, 70.25% 64%, 71.3% 49.3%);
-            }
+        /* Pantorrilla derecha */
+        .bottom>div:first-child {
+            width: 65px;
+            height: 85px;
+            margin-top: -12px;
+            margin-left: 6px;
+            clip-path: polygon(73.25% 34.61%, 78.89% 20.91%, 90% 11.29%, 92% 5%, 89.25% 0%, 36.52% 0%, 23.31% 17.71%, 16.67% 33.73%, 11.91% 46.19%, 11.91% 56.92%, 8.52% 67.31%, 4.69% 77.16%, 3.47% 88.1%, 10% 100%, 50.81% 100%, 70.25% 64%, 71.3% 49.3%);
 
-            .botright {
-                width: 50px;
-                height: 85px;
-                margin-top: -10px;
-                margin-left: 47px;
-                clip-path: polygon(9.19% 65.79%, 17.04% 88.86%, 23.73% 100%, 82.75% 100%, 90.7% 88.86%, 90.7% 75.83%, 85.95% 58.53%, 87.88% 33.49%, 83.39% 12.22%, 70.71% 0%, 13.79% 0%, 17.04% 10.77%, 17.04% 32.69%, 9.19% 41.89%);
-            }
+        }
+
+        /* Pantorrilla izquierda */
+        .bottom>div:last-child {
+            width: 50px;
+            height: 85px;
+            margin-top: -10px;
+            margin-left: 47px;
+            clip-path: polygon(9.19% 65.79%, 17.04% 88.86%, 23.73% 100%, 82.75% 100%, 90.7% 88.86%, 90.7% 75.83%, 85.95% 58.53%, 87.88% 33.49%, 83.39% 12.22%, 70.71% 0%, 13.79% 0%, 17.04% 10.77%, 17.04% 32.69%, 9.19% 41.89%);
+        }
+
+        .feet>* {
+            background-color: black;
         }
 
         .feet {
@@ -229,8 +239,8 @@ h2 {
             align-items: center;
             background-color: transparent;
 
-            .rightFoot {
-                background-color: black;
+            /* Pie derecho */
+            .leftFoot+* {
                 width: 62px;
                 height: 50px;
                 margin-top: -15px;
@@ -241,7 +251,6 @@ h2 {
             .leftFoot {
                 width: 45px;
                 height: 50px;
-                background-color: black;
                 margin-top: -5px;
                 clip-path: polygon(80.26% 86.97%, 80.26% 77.32%, 74.51% 51.65%, 81.25% 16.49%, 88.96% 0%, 30.79% 0%, 21.5% 51.65%, 13.13% 77.32%, 17.75% 92.51%, 34.75% 93.51%, 62% 93.51%, 77.42% 92.51%);
             }
