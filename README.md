@@ -8,7 +8,7 @@ imagen de referencia siendo [la siguiente](https://cdn2.steamgriddb.com/file/sgd
 
 Únicamente utilicé dos archivos para este repositorio: `index.html` y `styles.css`, los
 cuales se explican por sí solos qué función tiene cada uno. El dibujo final se puede
-visualizar en [`joelsiervas.online`](joelsiervas.online/24472/CSS-Drawing) o en [`cuchito.live`](cuchito.live/corderito/CSS-Drawing)
+visualizar en [`joelsiervas.online`](https://joelsiervas.online/24472/CSS-Drawing) o en [`cuchito.live`](https://cuchito.live/corderito/CSS-Drawing)
 
 ---
 ## Nota Importante
