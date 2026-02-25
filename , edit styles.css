@@ -18,14 +18,13 @@
                 <ul class="head">
                     <li></li>
                 </ul>
-                <div class="upperBody">
-                    <div class="torso"></div>
-                    <div class="weapon"></div>
-                    <div class="arms">
-                        <div class="leftArm"></div>
-                        <div class="rightArm"></div>
-                    </div>
 
+                <div class="torso">
+                    <div class="arms">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="weapon"></div>
                 </div>
                 <div class="belt"></div>
                 <div class="legs">
