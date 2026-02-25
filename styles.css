@@ -92,8 +92,8 @@ h2 {
             background-color: black;
             width: 67px;
             height: 45px;
-            margin-left: 100px;
-            margin-top: -50px;
+            margin-left: 101px;
+            margin-top: -40px;
             border-radius: 50% 50% 12% 9% / 81% 81% 12% 12%;
         }
 
@@ -102,11 +102,12 @@ h2 {
             display: block;
             width: 100%;
             height: 100px;
-            margin-left: 40px;
-            margin-top: -25px;
+            margin-left: 172px;
+            margin-top: -5px;
             list-style-position: inside;
 
             li {
+                list-style: disc;
                 margin: 0;
                 padding: 0;
                 line-height: 0;
